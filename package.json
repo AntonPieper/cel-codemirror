@@ -1,28 +1,31 @@
 {
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"@codemirror/autocomplete": "^6.20.1",
-		"@codemirror/language": "^6.12.2",
-		"@codemirror/lint": "^6.9.5",
-		"@codemirror/state": "^6.6.0",
-		"@codemirror/view": "^6.40.0",
-		"@marcbachmann/cel-js": "github:AntonPieper/cel-js#types/register-overloads-exports-definitions",
-		"@tailwindcss/vite": "^4.2.1",
-		"@lezer/highlight": "^1.2.3",
-		"codemirror": "^6.0.2",
-		"preact": "^10.26.9",
-		"tailwindcss": "^4.2.1"
-	},
-	"devDependencies": {
-		"@preact/preset-vite": "^2.10.2",
-		"typescript": "^5.9.3",
-		"vite": "^7.0.4"
-	},
-	"packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be"
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "pnpm run build && wrangler dev",
+    "deploy": "pnpm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.20.1",
+    "@codemirror/language": "^6.12.2",
+    "@codemirror/lint": "^6.9.5",
+    "@codemirror/state": "^6.6.0",
+    "@codemirror/view": "^6.40.0",
+    "@lezer/highlight": "^1.2.3",
+    "@marcbachmann/cel-js": "github:AntonPieper/cel-js#types/register-overloads-exports-definitions",
+    "@tailwindcss/vite": "^4.2.1",
+    "codemirror": "^6.0.2",
+    "preact": "^10.26.9",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.29.1",
+    "@preact/preset-vite": "^2.10.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.0.4",
+    "wrangler": "^4.75.0"
+  },
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be"
 }
