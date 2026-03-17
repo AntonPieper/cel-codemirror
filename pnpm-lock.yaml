@@ -27,8 +27,8 @@ importers:
         specifier: ^1.2.3
         version: 1.2.3
       '@marcbachmann/cel-js':
-        specifier: file:../cel-js
-        version: file:../cel-js
+        specifier: github:AntonPieper/cel-js#types/register-overloads-exports-definitions
+        version: https://codeload.github.com/AntonPieper/cel-js/tar.gz/0f6d89f15bc2a0cb6c74a82c815c02e2361472ff
       '@tailwindcss/vite':
         specifier: ^4.2.1
         version: 4.2.1(vite@7.3.1(jiti@2.6.1)(lightningcss@1.31.1))
@@ -349,8 +349,9 @@ packages:
   '@lezer/lr@1.4.8':
     resolution: {integrity: sha512-bPWa0Pgx69ylNlMlPvBPryqeLYQjyJjqPx+Aupm5zydLIF3NE+6MMLT8Yi23Bd9cif9VS00aUebn+6fDIGBcDA==}
 
-  '@marcbachmann/cel-js@file:../cel-js':
-    resolution: {directory: ../cel-js, type: directory}
+  '@marcbachmann/cel-js@https://codeload.github.com/AntonPieper/cel-js/tar.gz/0f6d89f15bc2a0cb6c74a82c815c02e2361472ff':
+    resolution: {tarball: https://codeload.github.com/AntonPieper/cel-js/tar.gz/0f6d89f15bc2a0cb6c74a82c815c02e2361472ff}
+    version: 0.0.0-placeholder
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -1261,7 +1262,7 @@ snapshots:
     dependencies:
       '@lezer/common': 1.5.1
 
-  '@marcbachmann/cel-js@file:../cel-js': {}
+  '@marcbachmann/cel-js@https://codeload.github.com/AntonPieper/cel-js/tar.gz/0f6d89f15bc2a0cb6c74a82c815c02e2361472ff': {}
 
   '@marijn/find-cluster-break@1.0.2': {}
 
